@@ -1,0 +1,31 @@
+name: MMCTeleporter
+main: main.java.net.moddedminecraft.mmcteleporter.MMCTeleporter
+version: 0.1
+
+commands:
+   mmct:
+      description: Teleports you to an offline player.
+      usage: /<command> [player]
+   mmcthere:
+      description: Allows you to set the player's "spawn" position
+      usage: /<command> [player] {message}
+   mmctback:
+      description: Tp's you back to the position you came from
+      usage: /<command>
+   mmctspawn:
+      description: TP a user to default world spawnpoint
+      usage: /otpspawn [player]
+      
+permissions:
+    mmcteleporter.mmct:
+        description: Let's you teleport to a players logout location!
+        default: op
+    mmcteleporter.mmcthere:
+        description: Allows you to set the player's spawn position
+        default: op
+    mmcteleporter.mmctback:
+        description: Let's you use /mmctback
+        default: op
+    mmcteleporter.mmctspawn:
+        description: Allows you to send an offline player to spawn
+        default: op
